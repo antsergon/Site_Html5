@@ -1,0 +1,195 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Site CSS : Aula HTML/CSS Senac Taubaté</title>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="funcoes.js"></script>
+
+<link rel="stylesheet" href="estilo.css" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<link rel="stylesheet" href="nivo/default.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo/style.css" />
+<link rel="stylesheet" href="nivo/nivo-slider.css" />
+
+<script type="text/javascript" src="nivo/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jquery.nivo.slider.js"></script> 
+
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+</script> 
+
+</head>
+
+<body>
+<a name="topo"></a>
+<div class="divSite">
+	<!-- Div do Logotipo -->
+	<div class="divLogo">
+    	<a href="index.html">
+    		<img src="imagens/logotipo.png" width="250" height="50" alt="Musica" />
+        </a>
+    </div>
+    
+    <!-- Div do MENU -->
+	<div class="divMenu">
+    	<ul>
+        	<li>
+            	<a href="index.html">
+                	Home
+                </a>
+            </li>
+            <li><a href="#">Albuns</a></li>
+            <li><a href="#">Artistas</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="galeria.html">Galeria de Fotos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>    
+    </div>
+    
+    <div id="wrapper">
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider"> 
+                
+                <img src="imagens/toystory.jpg" 
+                	 data-thumb="imagens/toystory.jpg" alt="" /> 
+                <img src="imagens/up.jpg" 
+                     data-thumb="imagens/up.jpg" alt="" title="Caption" />
+                
+                <img src="imagens/walle.jpg" 
+                     data-thumb="imagens/walle.jpg" alt="" /> 
+                <img src="imagens/nemo.jpg" 
+                data-thumb="imagens/nemo.jpg" alt="" title="#htmlcaption" /> 
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption"> 
+            	<strong>Esta </strong> imagem pode conter codigo em 
+                <em>HTML</em> com <a href="#">link</a>. 
+            </div>
+        </div>
+    </div>
+    
+    <div class="divRadio" style="clear:both">
+    	<img src="imagens/radio.png" alt="" />
+    </div>
+    
+    <div class="divConteudo">
+
+		<!-- Inicio Menu LAteral -->
+		<div class="divMenuLateral">
+        	<ul>
+            	<li><a href="#"><i class="fa fa-clock-o" style="font-size:25px;color:red"></i> &nbsp;Musicas Populares</a></li>
+                <li><a href="#"><i class="fa fa-android" style="font-size:25px;color:red"></i> &nbsp;Albuns Populares</a></li>
+                <li><a href="#"><i class="fa fa-address-book" style="font-size:25px;color:red"></i> &nbsp;Outros Artistas</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Contatos</a></li>
+                <li><a href="#">Galeria de Fotos</a></li>
+        	</ul>
+        </div> <!-- Fim Menu Lateral --> 
+        
+        <div class="divBusca">
+        	<table width="90%" height="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr valign="middle">
+                  <td width="50%">
+                    <form action="procurar.php" method="post">
+                        <input class="campo" type="text" name="textNome" placeholder="Digite o nome" required/>
+                        <button class="botao" type="submit" name="btnEnviar">Pesquisar</button>
+                    </form>                  
+                  </td>
+                  <td width="50%">Albuns mais populares</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+
+		<!-- Eventos -->
+        
+        <div class="divEventos">
+        	<!-- Conteudo do evento -->
+            <div class="divEventosIcone">
+            	<i class="fa fa-calendar fa-3x"></i>
+            </div>
+            
+            <div class="divEventosTitulo">
+            	<a href="http://www.google.com.br">Semana Senac de Casamento</a>
+            </div>
+            
+            <div class="divEventosSubTitulo">
+            	Workshops, palestras entre outros.
+            </div>
+            
+        </div>
+        
+        
+         <div class="divEventos">
+        	<!-- Conteudo do evento -->
+            <div class="divEventosIcone">
+            	<i class="fa fa-calendar fa-3x"></i>
+            </div>
+            
+            <div class="divEventosTitulo">
+            	<a href="http://www.google.com.br">Semana Senac RoadShow</a>
+            </div>
+            
+            <div class="divEventosSubTitulo">
+            	Workshops, palestras, Competições entre outros.
+            </div>
+            
+        </div>
+        
+        <!-- Fim Eventos -->
+	</div>
+    
+    <div class="divRedesSociais">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+            
+              <td width="360px">
+              	<a href="http://www.twitter.com" target="_blank">
+                	<img src="imagens/twitter.png" alt="" />
+                </a>
+              </td>
+              
+              <td width="280px">
+              	 <a href="http://www.fb.com" target="_blank">
+              		<img src="imagens/facebook.png" alt="" />
+                 </a>
+              </td>
+              
+              <td width="360px">
+              	 <a href="http://www.google.com.br" target="_blank">
+              		<img src="imagens/google.png" alt="" />
+                 </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    
+    <div class="divRodape">
+    
+    	<table width="90%" height="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr valign="middle">
+              <td width="25%"><i class="fa fa-copyright"></i> Copyright 2016-2017</td>
+              <td>Todos os direitos reservados.</td>
+              <td>
+              	  <a href="#topo">
+              		<i class="fa fa-arrow-circle-up fa-2x" style="color:#999"></i>
+                  </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    
+    </div>
+
+</div>
+</body>
+</html>
